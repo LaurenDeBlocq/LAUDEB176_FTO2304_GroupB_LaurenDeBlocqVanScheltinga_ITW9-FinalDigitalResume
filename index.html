@@ -16,7 +16,7 @@
             <source srcset="./Images/profile-pic-medium.jpeg" media="(max-width: 1100px)">
             <img src="./Images/profile-pic-default.jpeg" id="profile-pic">
         </picture>
-        <p class="header-text">Welcome to my resume</p>
+        <p class="header-text statement">Welcome to my resume</p>
     </header>
     <main>
 
@@ -104,12 +104,29 @@
         <!-- Contains info required to contact me in future -->
         <footer>
             <div id="contact">
-                <h2>Contact me</h2>
-                <nav class="contact-info">
-                    <a href="https://www.linkedin.com/in/lauren-de-blocq-van-scheltinga/" target="_blank">LinkedIn</a>
-                    <a href="https://www.instagram.com/bakers_blocq/" target="_blank">Bakers Blocq</a>
+                <h2 class="contact-info">Contact me</h2>
+                <nav >
+                    <a href="https://www.linkedin.com/in/lauren-de-blocq-van-scheltinga/" target="_blank" class="contact-info contact-item">LinkedIn</a>
+                    <a href="https://www.instagram.com/bakers_blocq/" target="_blank" class="contact-info contact-item">Bakers Blocq</a>
                 </nav>
             </div>
+            <form action="https://formsubmit.co/lauren.deblocq@gmail.com" method="post">
+                <label for="email">Hi there! What is your email address?</label>
+                <input type="email" name="email" id="email" placeholder="yourname@email.com" required>
+                <br>
+                <label for="reason">What are you trying to contact me about?</label>
+                <select name="reason" id="reason" required>
+                    <option value="">--Please select an option--</option>
+                    <option value="programming">Programming related reasons</option>
+                    <option value="baking">Baking related reasons</option>
+                    <option value="general">General enquires (please specify more below)</option>
+                </select>
+                <br>
+                <label for="extraInfo">Please tell me more about what you're interested in:</label>
+                <textarea rows="4" cols="50" name="extraInfo" placeholder="Type here"></textarea>
+                <br>
+                <input class="submit" type="submit" value="Submit">
+            </form>
         </footer>
     </main>
   </body>
