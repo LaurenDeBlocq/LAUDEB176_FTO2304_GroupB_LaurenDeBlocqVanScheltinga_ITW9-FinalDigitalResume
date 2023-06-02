@@ -20,12 +20,18 @@ header{
     color: rgb(222, 235, 239);
 }
 
-/* all generic section and child level styling */
+picture{
+    max-height: 50%;
+}
+
+/* all generic section styling */
 section{
     margin: 0%;
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
+
+/* Nav bar styling */
 
 aside{
     background-color: #5B5750;
@@ -47,12 +53,33 @@ aside{
 }
 
 .top-bar-item:hover{
-    background-color: #7a7670;
+    background-color: #777269;
 }
+
+/* CV content styling */
 
 .CV-section{
     background-color: #B1C1C0;
+    margin: 0;
+    padding: 1rem;
+    border-bottom: 1px solid #492C1D;
+    border-top: 1px solid #492C1D;
 }
+
+h3{
+    padding-top: 1em;
+}
+
+h4{
+    text-decoration: solid;
+}
+
+h5{
+    font-style: italic;
+    font-weight: lighter;
+}
+
+
 
 /* all footer level styling */
 
