@@ -1,0 +1,20 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header{
+    background-color: #492C1D;
+}
+
+.header-text {
+    color: rgb(222, 235, 239);
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.CV-section{
+    background-color: #B1C1C0;
+}
