@@ -77,6 +77,10 @@ aside{
     background-color: #777269;
 }
 
+.last-item{
+    border-bottom: 2px solid #492C1D;
+}
+
 /* CV content styling */
 
 .CV-section{
@@ -89,6 +93,7 @@ aside{
 
 h3{
     padding-top: 1em;
+    text-decoration-line: underline;
 }
 
 h4{
@@ -107,6 +112,7 @@ h5{
 footer{
     background-color: #492C1D;
     display: grid;
+    grid-template-columns: 30% 50%;
     height: fit-content;
     padding-bottom: 2rem;
 }
@@ -114,14 +120,93 @@ footer{
 .contact-info{
     color: #DDE4E3;
     margin-left: 2rem;
+    display: flex;
+    
+    flex-wrap: wrap;
 }
 
 .contact-item{
-    background-color: #5B5750;
+    background-color: #777269;
     padding: 1em;
     margin-bottom: 1rem;
+    border: 1px solid #24160e;
+    
+}
+
+.contact-item:hover {
+    background-color: #afa99e;
+    color: #24160e;
+}
+
+form {
+    border: 1px solid #492C1D;
+    background-color: #DDE4E3;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 1rem;
+    padding: 1em;
+}
+
+input {
+    width: fit-content;
+}
+
+select {
+    width: max-content;
+}
+
+.submit {
+    display: flex;
+    align-self: flex-end;
 }
 
 /* Adding responsiveness for phone screen */
+@media only screen and (max-width: 600px){
+    header{
+        height: 60vh;
+    }
+    
+    h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .statement{
+        font-size: medium;
+    }
+
+    picture{
+        height: 50%;
+    }
+
+    footer{
+        justify-content: space-around;
+    }
+
+    
+
+    select{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+}
 
 /* Adding responsiveness for tablet screen */
+
+@media only screen and (min-width: 600px){
+    .contact-item{
+        max-width: fit-content;
+    }
+
+    footer{
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .contact-item{
+        max-width: fit-content;
+    }
+}
